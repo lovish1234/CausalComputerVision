@@ -1,0 +1,7 @@
+nose
+numpy
+tornado
+thrift
+imageio
+scipy
+joblib
