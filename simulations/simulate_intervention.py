@@ -74,20 +74,22 @@ if __name__ == '__main__':
     bs = 5
 
     intervent=True
-    dorandom=True
+    dorandom=False
 
     train_log=[]
     test_log = []
+    ccc=0
     for epoch in range(50):
         all_iteration = int( x_train.shape[0] / bs)
         acc_cnt=0
         cnt = 0
         for each in range(all_iteration):
+            ccc+=1
 
             if intervent:
                 x_data = x_train[each * bs: (each + 1) * bs]
                 y_data = y_train[each * bs: (each + 1) * bs]
-                if dorandom:
+                if dorandom or ccc<0:
                     r = random.sample([1,2,3], 1)[0]
                 else:
                     x_data_t = torch.from_numpy(x_train[each * bs: (each + 1) * bs])
@@ -100,8 +102,10 @@ if __name__ == '__main__':
                     g = torch.abs(x_in.grad)
                     _, pred_g = g.topk(1, 1, True, True)
                     # print(pred_g.item())
-                    r = pred_g.item()
-                    # print(r)
+                    ind = random.sample([0,1,2,3,4],1)[0]
+                    pred_g = pred_g[ind]
+                    r = pred_g.item() + 1
+                    print(r)
 
                 if r==1:
                     x_data[:, 0] = np.clip(x_data[:, 0] + np.random.normal(0, 1, size=x_data[:, 0].shape), 0, 1)
