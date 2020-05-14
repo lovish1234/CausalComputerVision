@@ -58,9 +58,9 @@ def build_task(C, ball_r, over):
             .set_color('green')
 
     # Add a dynamic ball
-
     # target object
     bottom_wall = C.add('static bar', 0.5, bottom=0, left=0)
+    bottom_wall_right = C.add('static bar', 0.5, bottom=0, right=C.scene.width)
 
     # Create assignment.
     C.update_task(
