@@ -1,16 +1,18 @@
 **Causal-PHYRE** aspires to be a benchmark for causal physical reasoning. It is build upon [**PHYRE**](https://github.com/facebookresearch/phyre). Though it uses the sample simulation engine as PHYRE, Causal-PHYRE allows for intervention and thus, causal discovery.
 
-It contains 21 sets of tasks. Each task has been derived from a pre-determined causal graph. Table below shows a set of tasks along with the corresponding causal graph. Each task has a goal state, such as a ball meeting floor. Different **task templates** have different initializations. Each task has been deviced in a manner which contains a **target** (ie. crietria satisfying the goal state), **cause** of the target, and a **correlate** of the target. Tasks and the corresponding templates can be explored in the [demo](causalai.net)
+It contains 21 sets of tasks. Each task has been derived from a pre-determined causal graph. Table below shows a set of tasks along with the corresponding causal graph. Each task has a goal state, such as a ball meeting floor. Different **task templates** have different initializations. Each task has been deviced in a manner which contains a **target** (ie. crietria satisfying the goal state), **cause** of the target, and a **correlate** of the target. Tasks and the corresponding templates can be explored in the [demo](causalai.net).
+
+In the graphs below, 
 
 
 |Graph| Success | Failure  | 
 |:-------------:|:-------------:|:-----:|
-| <img src="images/Graph_1.png" height="320" width="320" alt="Graph 1" /> | <img src="images/task_1_A.mov.gif" alt="Task A Success" /> | <img src="images/task_1_B.mov.gif" alt="Task B Failure" />|
-| <img src="images/Graph_2.png" height="320" width="320" alt="Graph 2" /> | <img src="images/task_2_B.mov.gif" alt="Task A Success" /> | <img src="images/task_2_A.mov.gif" alt="Task B Failure" />|
-| <img src="images/Graph_3.png" height="320" width="320" alt="Graph 3" />| <img src="images/task_3_A.mov.gif" alt="Task A Success" /> | <img src="images/task_3_B.mov.gif" alt="Task B Failure" />|
-| <img src="images/Graph_4.png" height="320" width="320" alt="Graph 4" />| <img src="images/task_4_A.mov.gif" alt="Task A Success" /> | <img src="images/task_4_B.mov.gif" alt="Task B Failure" />|
-| <img src="images/Graph_5.png" height="320" width="320" alt="Graph 5" />| <img src="images/task_5_A.mov.gif" alt="Task A Success" /> | <img src="images/task_5_B.mov.gif" alt="Task B Failure" />|
-| <img src="images/Graph_6.png" height="320" width="320" alt="Graph 6" />| <img src="images/task_6_A.mov.gif" alt="Task A Success" /> | <img src="images/task_6_B.mov.gif" alt="Task B Failure" />|
+| <img src="images/Graph_1.png" height="240" width="240" alt="Graph 1" /> | <img src="images/task_1_A.mov.gif" alt="Task A Success" /> | <img src="images/task_1_B.mov.gif" alt="Task B Failure" />|
+| <img src="images/Graph_2.png" height="240" width="240" alt="Graph 2" /> | <img src="images/task_2_B.mov.gif" alt="Task A Success" /> | <img src="images/task_2_A.mov.gif" alt="Task B Failure" />|
+| <img src="images/Graph_3.png" height="240" width="240" alt="Graph 3" />| <img src="images/task_3_A.mov.gif" alt="Task A Success" /> | <img src="images/task_3_B.mov.gif" alt="Task B Failure" />|
+| <img src="images/Graph_4.png" height="240" width="240" alt="Graph 4" />| <img src="images/task_4_A.mov.gif" alt="Task A Success" /> | <img src="images/task_4_B.mov.gif" alt="Task B Failure" />|
+| <img src="images/Graph_5.png" height="240" width="240" alt="Graph 5" />| <img src="images/task_5_A.mov.gif" alt="Task A Success" /> | <img src="images/task_5_B.mov.gif" alt="Task B Failure" />|
+| <img src="images/Graph_6.png" height="240" width="240" alt="Graph 6" />| <img src="images/task_6_A.mov.gif" alt="Task A Success" /> | <img src="images/task_6_B.mov.gif" alt="Task B Failure" />|
 
 
 Brief summary of the tasks is given below :-
@@ -44,8 +46,8 @@ Apart from providing a set of tasks, Causal-PHYRE also allows the user to interv
 
 |Status| Graph | Task | 
 |:----------:|:-------------:|:-------------:|
-| Before Intervention | <img src="images/Graph_2.png" height="320" width="320" alt="Graph 1" /> | <img src="images/Intervention_1.png" height="320" width="320" alt="Before Intervention" />|
-| After Intervention | <img src="images/Graph_2_I.png" height="320" width="320" alt="Graph 1" /> | <img src="images/Intervention_2.png" height="320" width="320" alt="After Intervention" />|
+| Before Intervention | <img src="images/Graph_2.png" height="240" width="240" alt="Graph 1" /> | <img src="images/Intervention_1.gif" height="240" width="240" alt="Before Intervention" />|
+| After Intervention | <img src="images/Graph_2_I.png" height="240" width="240" alt="Graph 1" /> | <img src="images/Intervention_2.gif" height="240" width="240" alt="After Intervention" />|
 
 
 ### Installation 
