@@ -76,11 +76,11 @@ OBJECT_TYPES = frozenset([
     'catapult',
     'jar',
     'standingsticks',
-    'lyingsticks',
     'left-wall',
     'right-wall',
     'top-wall',
     'bottom-wall',
+    'lyingsticks',
 ])
 
 

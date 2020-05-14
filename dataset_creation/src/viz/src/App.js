@@ -92,7 +92,7 @@ function setTitle() {
     const state = getStateForUrl();
     if (state.task_index) return 'PHYRE - Task ' + state.tempate_id + ':' + state.task_index;
     if (state.tempate_id) return 'PHYRE - Template ' + state.tempate_id;
-    return 'Biased-PHYRE Player';
+    return 'PHYRE Player';
   }
   document.title = detectTitle();
 }
@@ -407,7 +407,7 @@ class WorldWithControls extends Component {
         Below are 100 modifications of a single task. These minor
         modifications let us benchmark a weak form of "within-template"
         generalization as opposed to a more challenging "cross-template"
-        generalization...
+        generalization.
         See{" "}
         <a href="https://research.fb.com/publications/phyre-a-new-benchmark-for-physical-reasoning/">the paper</a>
         {" "}for details.
@@ -418,11 +418,11 @@ class WorldWithControls extends Component {
     </Message>
     }
     return <Message className='dataset_info'>
-      <b><a href="http://phyre.ai">PHYRE</a></b> is  a benchmark for physical reasoning.
+      <b><a href="http://phyre.ai">PHYRE</a></b> is a benchmark for physical reasoning.
       <p>
       It
       consists of physical-reasoning tasks that an agent has to solve by performing
-      an action. The tasks are divided into two tiers by the kind of action
+      an action. The tasks are seperated into two tiers by the kind of action
       needed. Each tier has 25 task templates and each template has 100 tasks.
       Click on a task template below to see the tasks and try to solve the
       them. See <a href="https://github.com/facebookresearch/phyre">our repository</a> for details.
@@ -912,7 +912,7 @@ class App extends Component {
     return (
       <div className={"App  mode_" + window.phyre_config.mode}>
         <header className="App-header">
-          <h1 className="App-title" onClick={() => {navigate('#'); this.setStateForUrl();}}>Biased-PHYRE Player</h1>
+          <h1 className="App-title" onClick={() => {navigate('#'); this.setStateForUrl();}}>PHYRE Player</h1>
         </header>
         {
           (this.state.template_id !== null && this.state.task_index !== null)

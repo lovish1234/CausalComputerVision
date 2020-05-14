@@ -1,7 +1,7 @@
 nose
 numpy
 tornado
-thrift
+thrift==0.11.0
 imageio
 scipy
 joblib
