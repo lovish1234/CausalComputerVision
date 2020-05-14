@@ -1,7 +1,7 @@
 **Causal-PHYRE** aspires to be a benchmark for causal physical reasoning. Each of the 2-D physics puzzle has three variables *cause*, *confounder* and *effect*. 
 
-|Graph| Success    | Failure  | 
-|:-------------:|:-------------:|: -----:|
+|Graph| Success | Failure  | 
+|:-------------:|:-------------:|:-----:|
 | <img src="images/Graph_1.png" height="320" width="320" alt="Graph 1" /> | <img src="images/task_1_A.mov.gif" alt="Task A Success" /> | <img src="images/task_1_B.mov.gif" alt="Task B Failure" />|
 | <img src="images/Graph_2.png" height="320" width="320" alt="Graph 2" /> | <img src="images/task_2_B.mov.gif" alt="Task A Success" /> | <img src="images/task_2_A.mov.gif" alt="Task B Failure" />|
 | <img src="images/Graph_3.png" height="320" width="320" alt="Graph 3" />| <img src="images/task_3_A.mov.gif" alt="Task A Success" /> | <img src="images/task_3_B.mov.gif" alt="Task B Failure" />|
