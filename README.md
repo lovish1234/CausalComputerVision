@@ -1,5 +1,17 @@
 **Causal-PHYRE** aspires to be a benchmark for causal physical reasoning. Each of the 2-D physics puzzle has three variables *cause*, *confounder* and *effect*. 
 
+| Success    | Failure  | 
+|:-------------:| -----:|
+| <img src="images/task_1_A.gif" alt="Task A Success" /> | <img src="images/task_1_B.gif" alt="Task A Failure" />|
+| <img src="images/task_2_A.gif" alt="Task A Success" /> | <img src="images/task_2_B.gif" alt="Task A Failure" />|
+| <img src="images/task_3_A.gif" alt="Task A Success" /> | <img src="images/task_3_B.gif" alt="Task A Failure" />|
+| <img src="images/task_4_A.gif" alt="Task A Success" /> | <img src="images/task_4_B.gif" alt="Task A Failure" />|
+| <img src="images/task_5_A.gif" alt="Task A Success" /> | <img src="images/task_5_B.gif" alt="Task A Failure" />|
+| <img src="images/task_6_A.gif" alt="Task A Success" /> | <img src="images/task_6_B.gif" alt="Task A Failure" />|
+
+
+
+
 In our examples, the *effect* is manifested by the physical contact of two bodies for more than 3 seconds. The *cause* and *confounder* are pre-defined for each particular task. In the current examples, they can be one of the following :-
 
 | Task ID     | Cause         | Confounder |
@@ -42,6 +54,26 @@ A model trained on Causal-PHYRE benchmark is expected to learn the correlation b
 	- Every task contains a confounder and cause 
 
 
+
+
+
+### Installation 
+
+The recommended way to install and compile Causal-PHYRE from source is by using a [Conda](https://docs.conda.io/en/latest/) package manager.
+
+ ```(bash)
+git clone https://github.com/lovish1234/CausalComputerVision.git
+cd dataset_creation
+conda env create -f env.yml
+source activate causal-phyre
+pip install -e src/python
+```
+
+  To check that the installation was successful, run `python -m phyre.server` and open http://localhost:30303. That should start a local demo server.
+
+```
+
+
 To generate the tasks using the scripts
 
 `python generate_tasks.py data/task_scripts/main/ data/generated_tasks/  --with-eval-stats --save-single-pickle`
@@ -53,20 +85,3 @@ To activate the server
 To view the existing tasks
 
 `http://localhost:30303`
-
-
-### Installation 
-
-The recommended way to install and compile Causal-PHYRE from source is by using a [Conda](https://docs.conda.io/en/latest/) package manager.
-
- ```(bash)
-git clone https://github.com/facebookresearch/phyre.git
-cd phyre
-conda env create -f env.yml
-source activate phyre
-pip install -e src/python
-```
-
-  To check that the installation was successful, run `python -m phyre.server` and open http://localhost:30303. That should start a local demo server.
-
-```
