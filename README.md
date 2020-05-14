@@ -2,12 +2,12 @@
 
 | Success    | Failure  | 
 |:-------------:| -----:|
-| <img src="images/task_1_A.gif" alt="Task A Success" /> | <img src="images/task_1_B.gif" alt="Task A Failure" />|
-| <img src="images/task_2_A.gif" alt="Task A Success" /> | <img src="images/task_2_B.gif" alt="Task A Failure" />|
-| <img src="images/task_3_A.gif" alt="Task A Success" /> | <img src="images/task_3_B.gif" alt="Task A Failure" />|
-| <img src="images/task_4_A.gif" alt="Task A Success" /> | <img src="images/task_4_B.gif" alt="Task A Failure" />|
-| <img src="images/task_5_A.gif" alt="Task A Success" /> | <img src="images/task_5_B.gif" alt="Task A Failure" />|
-| <img src="images/task_6_A.gif" alt="Task A Success" /> | <img src="images/task_6_B.gif" alt="Task A Failure" />|
+| <img src="images/task_1_A.mov.gif" alt="Task A Success" /> | <img src="images/task_1_B.mov.gif" alt="Task A Failure" />|
+| <img src="images/task_2_A.mov.gif" alt="Task A Success" /> | <img src="images/task_2_B.mov.gif" alt="Task A Failure" />|
+| <img src="images/task_3_A.mov.gif" alt="Task A Success" /> | <img src="images/task_3_B.mov.gif" alt="Task A Failure" />|
+| <img src="images/task_4_A.mov.gif" alt="Task A Success" /> | <img src="images/task_4_B.mov.gif" alt="Task A Failure" />|
+| <img src="images/task_5_A.mov.gif" alt="Task A Success" /> | <img src="images/task_5_B.mov.gif" alt="Task A Failure" />|
+| <img src="images/task_6_A.mov.gif" alt="Task A Success" /> | <img src="images/task_6_B.mov.gif" alt="Task A Failure" />|
 
 
 
